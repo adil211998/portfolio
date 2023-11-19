@@ -8,13 +8,14 @@ import GithubImage from "/public/github-mark-white.svg"
 const Work = () => {
 
     return (
-        <section id="work" className="fit-height snap-start flex flex-wrap items-center">
+        // <section id="work" className="fit-height snap-start flex flex-wrap items-center">
+        <section id="work" className="flex flex-wrap items-center">
             <Section>
                 <div className="py-10 pt-20">
                     <p className='text-gray-100 mb-2 heading-text'>Portfolio</p>
                     <h2 className="text-4xl text-white font-bold uppercase heading-text half-underline">Overview</h2>
                 </div>
-                <p className="text-lg text-white">Welcome to my portfolio showcasing a diverse range of full stack web development projects! As a passionate and proficient full stack web developer. In this portfolio, you'll find a selection of projects that demonstrate my expertise in front-end technologies, back-end frameworks, databases, and the seamless integration of these components to create cohesive and dynamic web applications. Each project is a testament to my commitment to delivering high-quality, scalable, and user-friendly web experiences that cater to a variety of needs and industries.</p>
+                <p className="text-lg text-white">Welcome to my portfolio showcasing a diverse range of full stack web development projects! As a passionate and proficient full stack web developer. In this portfolio, you&rsquo;ll find a selection of projects that demonstrate my expertise in front-end technologies, back-end frameworks, databases, and the seamless integration of these components to create cohesive and dynamic web applications. Each project is a testament to my commitment to delivering high-quality, scalable, and user-friendly web experiences that cater to a variety of needs and industries.</p>
 
                 <div className="my-20">
                     <Slider Components={

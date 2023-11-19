@@ -3,7 +3,8 @@ import Section from './Section'
 
 const Contact = () => {
     return (
-        <section id="contact" className="fit-height snap-center relative flex flex-wrap items-center">
+        // <section id="contact" className="fit-height snap-center relative flex flex-wrap items-center">
+        <section id="contact" className="relative flex flex-wrap items-center py-10">
             <Section>
                 <div className="py-10 pt-20">
                     <p className='text-gray-100 mb-2 heading-text'>Contact</p>
@@ -22,7 +23,7 @@ const Contact = () => {
                 </div>
 
                 {/* Scroll Down arrow button */}
-                <span className="absolute bottom-[10%] right-[1rem] -translate-y-1/2 text-white flex items-center rotate-90 cursor-pointer select-none"
+                <span className="absolute bottom-[30%] right-[1rem] translate-y-1/2 text-white flex items-center rotate-90 cursor-pointer select-none"
                     onMouseEnter={() => {
                         if(!document.querySelector("#scroll-top-arrow-svg")?.classList.contains('-translate-x-1'))
                         {

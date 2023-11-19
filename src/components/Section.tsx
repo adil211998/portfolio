@@ -7,7 +7,7 @@ interface ISection {
 
 const Section = ({children, className}:ISection) => {
     return (
-        <div className={`max-w-[1280px] w-full h-full m-auto ${className}`}>{children}</div>
+        <div className={`max-w-[1024px] xl:max-w-[1280px] w-full h-full m-auto ${className}`}>{children}</div>
     )
 }
 
