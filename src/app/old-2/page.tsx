@@ -1,6 +1,7 @@
 "use client"
 
 import { StarCanvas } from '@/components/Canvas'
+import Section from '@/components/Section'
 import Contact from '@/components/contact'
 import Github from '@/components/svg/github'
 import Linkedin from '@/components/svg/linkedin'
@@ -11,7 +12,8 @@ import HeroSection from '@/components/HeroSection'
 export default function Home() {
     return (
         // <div className="snap-y snap-mandatory scroll-smooth overflow-y-auto h-screen" id='main-container'>
-        <div className="scroll-smooth overflow-y-auto h-screen" id='main-container'>
+        <div className="" id='main-container'>
+
             {/* Header */}
             <div className="absolute top-0 w-full text-white h-[100px] grid grid-cols-2 px-20">
                 <div className="h-full flex items-center">

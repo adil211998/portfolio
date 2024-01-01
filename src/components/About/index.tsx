@@ -3,7 +3,8 @@ import Section from '../Section'
 
 const About = () => {
     return (
-        <section id="about" className="fit-height flex items-center snap-center">
+        // <section id="about" className="fit-height flex items-center snap-center">
+        <section id="about" className="fit-height flex items-center">
             <Section>
                 <div className="py-10 pt-20">
                     <p className='text-gray-100 mb-2 heading-text'>About</p>

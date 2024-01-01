@@ -1,5 +1,6 @@
 import React from 'react'
 import Section from './Section'
+import { EarthCanvas } from './Canvas'
 
 const Contact = () => {
     return (
@@ -19,7 +20,10 @@ const Contact = () => {
 
                         <button className="px-8 py-2 text-lg font-medium text-white shadow-lg bg-[rgb(255,255,255,0.5)] hover:bg-[rgba(255,255,255,0.1)] transition-all duration-300 rounded-xl">Submit</button>
                     </div>
-                    <div></div>
+                    <div>
+                        {/* World Round */}
+                        <EarthCanvas />
+                    </div>
                 </div>
 
                 {/* Scroll Down arrow button */}
