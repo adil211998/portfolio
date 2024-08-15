@@ -3,34 +3,130 @@
         "title": "We Answer",
         "link": "https://www.weanswer.ai",
         "desc": "We answer provide answers against user questions and it's like a social communication platform for all users can comment, like and provide views and feedback against user questions and who ask to we answer and there also have many features for communication that available in other platforms.",
-        "image": "/projects/weanswer.svg"
+        "image": "/projects/weanswer.svg",
+        "tools": [
+            {
+                "title": "Laravel"
+            },
+            {
+                "title": "Nextjs"
+            },
+            {
+                "title": "Typescript"
+            },
+            {
+                "title": "HTML"
+            },
+            {
+                "title": "CSS"
+            }
+        ]
     },
     {
         "title": "We Plan",
         "link": "https://weplan.ai",
         "desc": "Users can search places where they want to spend weekends or vacations. We provide suggestions according to their survey or search.",
-        "image": "/projects/weplan.svg"
+        "image": "/projects/weplan.svg",
+        "tools": [
+            {
+                "title": "Nestjs"
+            },
+            {
+                "title": "Nextjs"
+            },
+            {
+                "title": "Typescript"
+            },
+            {
+                "title": "HTML"
+            },
+            {
+                "title": "CSS"
+            }
+        ]
     },
     {
         "title": "Story Runway",
         "link": "https://app.storyrunway.com",
         "desc": "This project based on child stories. Parents use this application to generate stories for their child in pdf format and video format.",
-        "image": "/projects/story.png"
+        "image": "/projects/story.png",
+        "tools": [
+            {
+                "title": "Nestjs"
+            },
+            {
+                "title": "Nextjs"
+            },
+            {
+                "title": "Typescript"
+            },
+            {
+                "title": "HTML"
+            },
+            {
+                "title": "CSS"
+            }
+        ]
     },
     {
         "title": "Vet and Tech",
         "desc": "Vet and tech is a multi-vendor application for vetnarians generate their store and buy surgical instruments and also provide courses, and events according to their surgical instruments.",
-        "image": "/projects/vetandtech.svg"
+        "image": "/projects/vetandtech.svg",
+        "tools": [
+            {
+                "title": "Laravel"
+            },
+            {
+                "title": "Nextjs"
+            },
+            {
+                "title": "Typescript"
+            },
+            {
+                "title": "HTML"
+            },
+            {
+                "title": "CSS"
+            }
+        ]
     },
     {
         "title": "GerDentUSA",
         "link": "https://next.gerdentusa.com",
         "desc": "GerDentUSA is an e-commerce application platform for dentist to buy surgical instruments.",
-        "image": "/projects/gerdentusa_logo.svg"
+        "image": "/projects/gerdentusa_logo.svg",
+        "tools": [
+            {
+                "title": "Laravel"
+            },
+            {
+                "title": "Nextjs"
+            },
+            {
+                "title": "Typescript"
+            },
+            {
+                "title": "HTML"
+            },
+            {
+                "title": "CSS"
+            }
+        ]
     },
     {
         "title": "Aire Health",
         "desc": "Aire health provide skin care products to dermatologist and they create patients portal through their physican portal and provide specific medicines to patients by Aire health skin care company.",
-        "image": "/projects/aire_health_logo.svg"
+        "image": "/projects/aire_health_logo.svg",
+        "tools": [
+            {
+                "title": "Codeigniter"
+            },
+            {
+                "title": "HTML"
+            },
+            {
+                "title": "CSS"
+            }
+        ]
     }
 ]

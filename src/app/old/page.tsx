@@ -17,8 +17,8 @@ export default function Old() {
                 {/* <div className="before:absolute before:top-[5rem] before:right-1 before:h-[300px] before:w-[300px] before:bg-[rgba(209,232,226,0.5)] before:blur-3xl"></div> */}
                 <h2 className="text-7xl text-white font-bold uppercase heading-text">Hi, This is a website</h2>
                 <p className="text-4xl text-gray-50 italic my-4 heading-text">You can approch us easily.</p>
-                <p className="max-w-[900px] text-center my-4 text-gray-50 montserrat-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, est officia tempora repudiandae aut ut, similique, incidunt exercitationem quasi perspiciatis laborum quaerat quam eius ipsa in ratione nulla! Nostrum, commodi?</p>
-                <button className="px-8 py-2 rounded-full text-lg text-white bg-[rgb(var(--g-color))] transition-all duration-300 hover:bg-[rgba(var(--g-color),0.25)] my-4 flex items-center montserrat-font">Find a way 
+                <p className="max-w-[900px] text-center my-4 text-gray-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, est officia tempora repudiandae aut ut, similique, incidunt exercitationem quasi perspiciatis laborum quaerat quam eius ipsa in ratione nulla! Nostrum, commodi?</p>
+                <button className="px-8 py-2 rounded-full text-lg text-white bg-[rgb(var(--g-color))] transition-all duration-300 hover:bg-[rgba(var(--g-color),0.25)] my-4 flex items-center">Find a way 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 ml-2">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg>

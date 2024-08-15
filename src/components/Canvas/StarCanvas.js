@@ -58,11 +58,6 @@ const StarCanvas = () => {
                     <Preload all />
                 </Canvas>
             </div>
-            <div className="absolute left-1/2 top-1/2 w-[200px] h-[200px] z-[-1] rounded-full" style={{
-                background: "linear-gradient(90deg, transparent, #d9d9d9, transparent)",
-                transform: "translate(-50%, -50%)",
-                filter: "blur(30px)"
-            }}></div>
             <div className="absolute right-0 h-screen w-1/2">
                 <Canvas camera={{ position: [position.x, position.y, position.z] }}>
                     <Suspense fallback={null} >

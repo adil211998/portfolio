@@ -5,7 +5,7 @@ import { EarthCanvas } from './Canvas'
 const Contact = () => {
     return (
         // <section id="contact" className="fit-height snap-center relative flex flex-wrap items-center">
-        <section id="contact" className="relative flex flex-wrap items-center py-10">
+        <section id="contact" className="fit-height relative flex flex-wrap items-center py-10">
             <Section>
                 <div className="py-10 pt-20">
                     <p className='text-gray-100 mb-2 heading-text'>Contact</p>
@@ -13,12 +13,12 @@ const Contact = () => {
                 </div>
                 <div className="grid grid-cols-2">
                     <div>
-                        <input type="text" name="" className="w-full py-4 px-4 rounded-2xl bg-gray-200 text-black border border-[rgb(var(--g-lite-color))] outline-[rgb(var(--black-color))] my-2 placeholder-[rgba(0,0,0,0.5)]" placeholder="Name" id="" />
-                        <input type="email" name="" className="w-full py-4 px-4 rounded-2xl bg-gray-200 text-black border border-[rgb(var(--g-lite-color))] outline-[rgb(var(--black-color))] my-2 placeholder-[rgba(0,0,0,0.5)]" placeholder="Email" id="" />
-                        <input type="text" name="" className="w-full py-4 px-4 rounded-2xl bg-gray-200 text-black border border-[rgb(var(--g-lite-color))] outline-[rgb(var(--black-color))] my-2 placeholder-[rgba(0,0,0,0.5)]" placeholder="Subject" id="" />
-                        <textarea name="" className="w-full py-4 px-4 rounded-2xl bg-gray-200 text-black border border-[rgb(var(--g-lite-color))] outline-[rgb(var(--black-color))] my-2 placeholder-[rgba(0,0,0,0.5)]" id="" cols={30} rows={8} placeholder="Write your message ..."></textarea>
+                        <input type="text" name="" className="w-full py-4 px-4 rounded-2xl bg-black text-white border border-[#595959] outline-[rgb(var(--black-color))] my-2 placeholder-[rgba(199,199,199,1)]" placeholder="Name" id="" />
+                        <input type="email" name="" className="w-full py-4 px-4 rounded-2xl bg-black text-white border border-[#595959] outline-[rgb(var(--black-color))] my-2 placeholder-[rgba(199,199,199,1)]" placeholder="Email" id="" />
+                        <input type="text" name="" className="w-full py-4 px-4 rounded-2xl bg-black text-white border border-[#595959] outline-[rgb(var(--black-color))] my-2 placeholder-[rgba(199,199,199,1)]" placeholder="Subject" id="" />
+                        <textarea name="" className="w-full py-4 px-4 rounded-2xl bg-black text-white border border-[#595959] outline-[rgb(var(--black-color))] my-2 placeholder-[rgba(199,199,199,1)]" id="" cols={30} rows={8} placeholder="Write your message ..."></textarea>
 
-                        <button className="px-8 py-2 text-lg font-medium text-white shadow-lg bg-[rgb(255,255,255,0.5)] hover:bg-[rgba(255,255,255,0.1)] transition-all duration-300 rounded-xl">Submit</button>
+                        <button className="px-8 py-2 text-lg font-normal text-white shadow-lg border border-[#595959] bg-[rgb(255,255,255,0.1)] hover:bg-[rgba(255,255,255,1)] hover:text-black transition-all duration-300 rounded-xl">Submit</button>
                     </div>
                     <div>
                         {/* World Round */}

@@ -4,8 +4,44 @@ import Slider from './Slider/Slider'
 import workData from "@/data/work.json"
 import Image from 'next/image'
 import GithubImage from "/public/github-mark-white.svg"
+import { sora } from '@/app/fonts'
 
 const Work = () => {
+
+    const getToolColorCode = (title: string) => {
+        const _title = title.toLowerCase()
+        if(["reactjs", "react"].includes(_title))
+        {
+            return "#3730a3";
+        }
+
+        if(["nestjs", "nest"].includes(_title))
+        {
+            return "#ea285b";
+        }
+
+        if(["html"].includes(_title))
+        {
+            return "#dd4b25";
+        }
+
+        if(["css"].includes(_title))
+        {
+            return "#254bdd";
+        }
+
+        if(["typescript", "php"].includes(_title))
+        {
+            return "#1e40af";
+        }
+
+        if(["laravel", "codeigniter"].includes(_title))
+        {
+            return "#991b1b";
+        }
+
+        return "#ffffff"
+    }
 
     return (
         // <section id="work" className="fit-height snap-start flex flex-wrap items-center">
@@ -21,7 +57,7 @@ const Work = () => {
                     <Slider Components={
                         workData.map((item, index) => {
                             return <div key={index} className="bg-[rgba(255,255,255,0)] p-3 rounded-xl text-white">
-                                <div className="h-[250px] bg-gray-300 rounded-lg relative">
+                                <div className="h-[250px] rounded-lg relative">
                                     <Image src={item.image} fill={true} alt={item.title} className="px-10" style={{objectFit: "contain"}} />
 
                                     <span className="block relative w-[30px] h-[30px] p-[2px] translate-y-1 -translate-x-1 rounded-full bg-[#000000] ml-auto shadow-sm cursor-pointer">
@@ -32,10 +68,15 @@ const Work = () => {
                                     <h4 className="text-2xl font-semibold mb-2">{item.title}</h4>
                                     <p className="text-white w-[900px]">{item.desc}</p>
 
-                                    <div className="montserrat-font mt-4" style={{letterSpacing: "1px"}}>
-                                        <span className="text-indigo-800 font-semibold text-sm">#Reactjs</span> &nbsp;
-                                        <span className="text-blue-800 font-semibold text-sm">#Typescript</span> &nbsp;
-                                        <span className="text-red-800 font-semibold text-sm">#Laravel</span>
+                                    <div className={`mt-4 ${sora.className}`} style={{letterSpacing: "1px"}}>
+                                        {
+                                            item.tools.map(tool => {
+                                                return <span className={`font-semibold text-sm`} style={{color: getToolColorCode(tool.title)}} >#{tool.title} &nbsp;</span>
+                                            })
+                                        }
+                                        {/* <span className="text-indigo-800 font-semibold text-sm">#Reactjs</span> &nbsp;
+                                        <span className="text-[#1e40af] font-semibold text-sm">#Typescript</span> &nbsp;
+                                        <span className="text-red-800 font-semibold text-sm">#Laravel</span> */}
                                     </div>
                                 </div>
                             </div>

@@ -7,14 +7,16 @@ import Linkedin from '@/components/svg/linkedin'
 import Work from '@/components/work'
 import About from '@/components/About'
 import HeroSection from '@/components/HeroSection'
+import Link from 'next/link'
+import { sora } from './fonts'
 
 export default function Home() {
     return (
         // <div className="snap-y snap-mandatory scroll-smooth overflow-y-auto h-screen" id='main-container'>
         <div className="scroll-smooth overflow-y-auto h-screen" id='main-container'>
             {/* Header */}
-            <div className="absolute top-0 w-full text-white h-[100px] grid grid-cols-2 px-20">
-                <div className="h-full flex items-center">
+            <div className={`header absolute top-[10px] left-1/2 -translate-x-1/2 w-max text-white h-[80px] grid grid-cols-2 px-20 ${sora.className}`}>
+                <div className={`h-full flex items-center`}>
                     <span className='font-semibold text-4xl cursor-pointer select-none'
                         onClick={() => {
                             document.querySelector('#main-container')?.scrollTo(0, 0)
@@ -24,15 +26,15 @@ export default function Home() {
                 <div className="flex justify-center items-center">
                     <ul className="list-none flex flex-wrap">
                         <li className="mx-10">
-                            <span className="text-2xl font-medium">About</span>
+                            <Link href={'#about'} className="text-xl font-medium">About</Link>
                         </li>
 
                         <li className="mx-10">
-                            <span className="text-2xl font-medium">Portfolio</span>
+                            <Link href={'#work'} className="text-xl font-medium">Portfolio</Link>
                         </li>
 
                         <li className="mx-10">
-                            <span className="text-2xl font-medium">Contact</span>
+                            <Link href={'#contact'} className="text-xl font-medium">Contact</Link>
                         </li>
                     </ul>
                 </div>
