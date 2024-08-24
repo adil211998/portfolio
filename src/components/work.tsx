@@ -70,8 +70,8 @@ const Work = () => {
 
                                     <div className={`mt-4 ${sora.className}`} style={{letterSpacing: "1px"}}>
                                         {
-                                            item.tools.map(tool => {
-                                                return <span className={`font-semibold text-sm`} style={{color: getToolColorCode(tool.title)}} >#{tool.title} &nbsp;</span>
+                                            item.tools.map((tool, index) => {
+                                                return <span key={index} className={`font-semibold text-sm`} style={{color: getToolColorCode(tool.title)}} >#{tool.title} &nbsp;</span>
                                             })
                                         }
                                         {/* <span className="text-indigo-800 font-semibold text-sm">#Reactjs</span> &nbsp;

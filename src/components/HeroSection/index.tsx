@@ -1,11 +1,12 @@
 import { inter, sora } from '@/app/fonts'
 import React from 'react'
+import style from "./hero-section.module.css";
 
 const HeroSection = () => {
     return (
         <div id='hero-section' className={`grid grid-cols-2 fit-height items-center justify-center p-24 snap-center relative ${inter.className}`}>
-            <div>
-                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%">
+            <div className={style.blob}>
+                {/* <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%">
                     <defs>
                         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
                             <stop offset="0%" style={{stopColor: "#f7f7f7"}}></stop>
@@ -25,7 +26,7 @@ const HeroSection = () => {
                             M455.5,299Q420,348,391,395.5Q362,443,306,469Q250,495,201.5,457Q153,419,99,394Q45,369,52.5,309.5Q60,250,61,195.5Q62,141,108.5,113Q155,85,202.5,59.5Q250,34,310,38Q370,42,406,90.5Q442,139,466.5,194.5Q491,250,455.5,299Z;
                             '></animate>
                     </path>
-                </svg>
+                </svg> */}
             </div>
             <div className='flex flex-col'>
                 <h2 className={`text-8xl text-white font-bold uppercase ${sora.className}`} style={{letterSpacing: "2px"}}>Creative</h2>
