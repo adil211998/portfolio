@@ -41,7 +41,7 @@ export default function Home() {
             </div>
 
             {/* Social links */}
-            <div className="absolute top-[50%] left-[20px] -translate-y-1/2">
+            <div className="absolute top-[50%] left-[20px] -translate-y-1/2 z-[1]">
                 <ul>
                     <li className="my-3">
                         <Linkedin />

@@ -1,8 +1,21 @@
 import React from 'react'
 import Section from './Section'
 import { EarthCanvas } from './Canvas'
+import emailjs from "emailjs-com"
 
 const Contact = () => {
+
+    const submitForm = (e: any) => {
+        e.preventDefault();
+
+        emailjs.sendForm(process.env.EmailJSService ?? 'service_enjbg5e', process.env.YOUR_TEMPLATE_ID ?? 'template_t7noeld', e.target, process.env.YOUR_USER_ID ?? 'qur657WDg94RW46dw')
+        .then((result) => {
+            window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
+        }, (error) => {
+            console.log(error.text);
+        });
+    }
+
     return (
         // <section id="contact" className="fit-height snap-center relative flex flex-wrap items-center">
         <section id="contact" className="fit-height relative flex flex-wrap items-center py-10">
@@ -12,14 +25,14 @@ const Contact = () => {
                     <h2 className="text-4xl text-white font-bold uppercase heading-text half-underline">Get a Quote</h2>
                 </div>
                 <div className="grid grid-cols-2">
-                    <div>
-                        <input type="text" name="" className="w-full py-4 px-4 rounded-2xl bg-black text-white border border-[#595959] outline-[rgb(var(--black-color))] my-2 placeholder-[rgba(199,199,199,1)]" placeholder="Name" id="" />
-                        <input type="email" name="" className="w-full py-4 px-4 rounded-2xl bg-black text-white border border-[#595959] outline-[rgb(var(--black-color))] my-2 placeholder-[rgba(199,199,199,1)]" placeholder="Email" id="" />
-                        <input type="text" name="" className="w-full py-4 px-4 rounded-2xl bg-black text-white border border-[#595959] outline-[rgb(var(--black-color))] my-2 placeholder-[rgba(199,199,199,1)]" placeholder="Subject" id="" />
-                        <textarea name="" className="w-full py-4 px-4 rounded-2xl bg-black text-white border border-[#595959] outline-[rgb(var(--black-color))] my-2 placeholder-[rgba(199,199,199,1)]" id="" cols={30} rows={8} placeholder="Write your message ..."></textarea>
+                    <form onSubmit={submitForm}>
+                        <input type="text" name="from_name" className="w-full py-4 px-4 rounded-2xl bg-black text-white border border-[#595959] outline-[rgb(var(--black-color))] my-2 placeholder-[rgba(199,199,199,1)]" placeholder="Name" id="from_name" />
+                        <input type="email" name="from_email" className="w-full py-4 px-4 rounded-2xl bg-black text-white border border-[#595959] outline-[rgb(var(--black-color))] my-2 placeholder-[rgba(199,199,199,1)]" placeholder="Email" id="from_email" />
+                        <input type="text" name="subject" className="w-full py-4 px-4 rounded-2xl bg-black text-white border border-[#595959] outline-[rgb(var(--black-color))] my-2 placeholder-[rgba(199,199,199,1)]" placeholder="Subject" id="subject" />
+                        <textarea name="message" className="w-full py-4 px-4 rounded-2xl bg-black text-white border border-[#595959] outline-[rgb(var(--black-color))] my-2 placeholder-[rgba(199,199,199,1)]" id="" cols={30} rows={8} placeholder="Write your message ..."></textarea>
 
-                        <button className="px-8 py-2 text-lg font-normal text-white shadow-lg border border-[#595959] bg-[rgb(255,255,255,0.1)] hover:bg-[rgba(255,255,255,1)] hover:text-black transition-all duration-300 rounded-xl">Submit</button>
-                    </div>
+                        <button type="submit" className="px-8 py-2 text-lg font-normal text-white shadow-lg border border-[#595959] bg-[rgb(255,255,255,0.1)] hover:bg-[rgba(255,255,255,1)] hover:text-black transition-all duration-300 rounded-xl">Submit</button>
+                    </form>
                     <div>
                         {/* World Round */}
                         <EarthCanvas />
